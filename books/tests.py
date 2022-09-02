@@ -24,4 +24,4 @@ class TestBook(TestCase):
         response = self.client.get("")
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "test books subtitle")
-        self.assertTemplateUsed(response, "book/book_list.html")
+        self.assertTemplateUsed(response, "books/book_list.html")
